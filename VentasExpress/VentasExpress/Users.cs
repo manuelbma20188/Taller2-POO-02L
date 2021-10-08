@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VentasExpress
 {
-    class Users
+    public class Users
     {
         //atributes
         private int code;

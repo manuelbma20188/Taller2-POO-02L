@@ -109,10 +109,10 @@ namespace VentasExpress
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvDatos.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvDatos.Location = new System.Drawing.Point(227, 228);
+            this.dgvDatos.Location = new System.Drawing.Point(216, 228);
             this.dgvDatos.Name = "dgvDatos";
             this.dgvDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDatos.Size = new System.Drawing.Size(440, 311);
+            this.dgvDatos.Size = new System.Drawing.Size(444, 248);
             this.dgvDatos.TabIndex = 29;
             // 
             // ViewInventory

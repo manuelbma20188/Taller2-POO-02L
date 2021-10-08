@@ -17,9 +17,9 @@ namespace VentasExpress
         {
             InitializeComponent();
         }
-        private List<Users> listUsers = new List<Users>(); //list of my class Users                
+        public static List<Users> listUsers = new List<Users>(); //list of my class Users                
         public static String name;
-        WelcomeView welcomeView = new WelcomeView();
+        WelcomeView form2 = new WelcomeView();
         //private void hashPass()
         //{
         //    string source = "Hello!";
@@ -38,7 +38,7 @@ namespace VentasExpress
         private bool setList(string uname, string pass)
         {
             bool ok=false; //we use this var to validate the credentials
-            listUsers.Add(new Users { Code = 1, Username = "1", Password = "1"});
+            listUsers.Add(new Users { Code = 1, Username = "1", Password = "1"}); //CAMBIAR CREDENCIALES
             listUsers.Add(new Users { Code = 2, Username = "vendedor", Password = "vendedor123" });
             listUsers.Add(new Users { Code = 3, Username = "invitado", Password = "invitadoinvitado123" });
 
@@ -70,7 +70,12 @@ namespace VentasExpress
             {
                 MessageBox.Show("Credenciales correctas");
                 name = txtUName.Text;                
-                welcomeView.Show();
+                form2.Show();
+               // form2.WindowState = FormWindowState.Maximized;
+
+                txtUName.Text = "";
+                txtPass.Text = "";
+                //this.Close();
             }
             else
             {

@@ -49,6 +49,7 @@ namespace VentasExpress
                 {
                     listProducts.Clear();
                     FillListProducts();
+                    dgvDatos.CurrentCell.Selected = false;
                 }
             }
             else
@@ -102,7 +103,7 @@ namespace VentasExpress
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
