@@ -17,13 +17,7 @@ namespace VentasExpress
         {
             InitializeComponent();
         }
-
-        Products products = new Products();
-
-        private int count;
-        
-
-        //Form1 form = new Form1();
+        Products products = new Products();                        
         private void WelcomeView_Load(object sender, EventArgs e)
         {
             lblWelcome.Text = "Bienvenido " + Form1.name;                
@@ -36,19 +30,12 @@ namespace VentasExpress
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Prueba salesForm = new Prueba();
-            //salesForm.Show();
-
-            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             ViewInventory viewInventory = new ViewInventory(products);
-            viewInventory.Show();
-            //this.Hide();
-
-            
+            viewInventory.Show();                        
             products = viewInventory.products;
         }
 
@@ -66,14 +53,10 @@ namespace VentasExpress
         }
 
         private void button4_Click(object sender, EventArgs e)
-        {
-            //form padre
-
+        {            
             Ventas salesInventory = new Ventas(products);             
-             salesInventory.Show();
-            products = salesInventory.products;
-           
-            
+            salesInventory.Show();
+            products = salesInventory.products;                       
         }
     }
 }

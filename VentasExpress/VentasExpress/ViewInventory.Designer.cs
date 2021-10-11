@@ -30,7 +30,6 @@ namespace VentasExpress
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,20 +37,6 @@ namespace VentasExpress
             this.dgvDatos = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnSalir.Location = new System.Drawing.Point(764, -4);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(37, 68);
-            this.btnSalir.TabIndex = 24;
-            this.btnSalir.Text = "X";
-            this.btnSalir.UseVisualStyleBackColor = false;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // lblWelcome
             // 
@@ -128,7 +113,6 @@ namespace VentasExpress
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblWelcome);
-            this.Controls.Add(this.btnSalir);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ViewInventory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -143,7 +127,6 @@ namespace VentasExpress
         #endregion
         private System.Windows.Forms.Label lblWelcome;
         protected System.Windows.Forms.DataGridView dgvDatos;
-        public System.Windows.Forms.Button btnSalir;
         public System.Windows.Forms.TextBox txtSearch;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Button btnViewData;

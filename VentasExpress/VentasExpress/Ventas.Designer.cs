@@ -33,7 +33,7 @@ namespace VentasExpress
             this.btnSell = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnSalir = new System.Windows.Forms.Button();
+            this.lblWelcome = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,26 +82,22 @@ namespace VentasExpress
             this.label1.TabIndex = 32;
             this.label1.Text = "Venta:";
             // 
-            // btnSalir
+            // lblWelcome
             // 
-            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnSalir.Location = new System.Drawing.Point(766, -10);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(37, 68);
-            this.btnSalir.TabIndex = 35;
-            this.btnSalir.Text = "X";
-            this.btnSalir.UseVisualStyleBackColor = false;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            this.lblWelcome.AutoSize = true;
+            this.lblWelcome.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcome.Location = new System.Drawing.Point(274, 29);
+            this.lblWelcome.Name = "lblWelcome";
+            this.lblWelcome.Size = new System.Drawing.Size(162, 20);
+            this.lblWelcome.TabIndex = 36;
+            this.lblWelcome.Text = "Formulario de ventas";
             // 
             // Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.btnSell);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label1);
@@ -123,6 +119,6 @@ namespace VentasExpress
         public System.Windows.Forms.Button btnSell;
         public System.Windows.Forms.TextBox txtSearch;
         public System.Windows.Forms.Label label1;
-        public System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Label lblWelcome;
     }
 }

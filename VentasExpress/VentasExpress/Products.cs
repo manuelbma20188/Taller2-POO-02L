@@ -31,9 +31,7 @@ namespace VentasExpress
             listProducts.Add(new Products { Code = "7", ProductName = "jabón", Price = 2.25, Quantity = 25 });
             listProducts.Add(new Products { Code = "8", ProductName = "carne", Price = 2.75, Quantity = 35 });
             listProducts.Add(new Products { Code = "9", ProductName = "gaseosa", Price = 1.80, Quantity = 200 });
-            listProducts.Add(new Products { Code = "10", ProductName = "desechables", Price = 3.25, Quantity = 900 });
-           // dgvDatos.DataSource = null;
-            //dgvDatos.DataSource = listProducts;
+            listProducts.Add(new Products { Code = "10", ProductName = "desechables", Price = 3.25, Quantity = 900 });          
         }
 
     }
