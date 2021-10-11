@@ -71,7 +71,8 @@ namespace VentasExpress
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(211, 36);
             this.txtSearch.TabIndex = 27;
-            this.txtSearch.Text = "TODOS";
+            this.txtSearch.Text = "todos";
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // label1
             // 
@@ -82,6 +83,7 @@ namespace VentasExpress
             this.label1.Size = new System.Drawing.Size(84, 20);
             this.label1.TabIndex = 26;
             this.label1.Text = "Busqueda:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnViewData
             // 
@@ -109,10 +111,10 @@ namespace VentasExpress
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvDatos.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvDatos.Location = new System.Drawing.Point(216, 228);
+            this.dgvDatos.Location = new System.Drawing.Point(191, 228);
             this.dgvDatos.Name = "dgvDatos";
             this.dgvDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDatos.Size = new System.Drawing.Size(444, 248);
+            this.dgvDatos.Size = new System.Drawing.Size(469, 248);
             this.dgvDatos.TabIndex = 29;
             // 
             // ViewInventory
@@ -127,7 +129,7 @@ namespace VentasExpress
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.btnSalir);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ViewInventory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewInventory";
@@ -139,12 +141,11 @@ namespace VentasExpress
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label lblWelcome;
-        private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnViewData;
-        private System.Windows.Forms.DataGridView dgvDatos;
+        protected System.Windows.Forms.DataGridView dgvDatos;
+        public System.Windows.Forms.Button btnSalir;
+        public System.Windows.Forms.TextBox txtSearch;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Button btnViewData;
     }
 }
