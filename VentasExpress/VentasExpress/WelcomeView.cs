@@ -17,7 +17,8 @@ namespace VentasExpress
         {
             InitializeComponent();
         }
-        Products products = new Products();                        
+        Products products = new Products();
+        Users users = new Users();
         private void WelcomeView_Load(object sender, EventArgs e)
         {
             lblWelcome.Text = "Bienvenido " + Form1.name;                
@@ -41,14 +42,19 @@ namespace VentasExpress
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string newPass = Interaction.InputBox("Ingrese la nueva contraseña: ");
-            foreach (var npass in Form1.listUsers.Where(w => w.Username == Form1.name))
-            {
-                npass.Password = newPass;
-            }
-            MessageBox.Show("Contraseña actualizada correctamente");
-            //this.WindowState = FormWindowState.Minimized;
-            this.Hide();
+            ChangePassword changePassword = new ChangePassword(users);
+            changePassword.Show();
+            users = changePassword.users;
+
+
+            //string newPass = Interaction.InputBox("Ingrese la nueva contraseña: ");
+            //foreach (var npass in Form1.listUsers.Where(w => w.Username == Form1.name))
+            //{
+            //    npass.Password = newPass;
+            //}
+            //MessageBox.Show("Contraseña actualizada correctamente");
+            ////this.WindowState = FormWindowState.Minimized;
+            //this.Hide();
             //form.Show();
         }
 

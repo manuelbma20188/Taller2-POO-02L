@@ -1,7 +1,7 @@
 ﻿
 namespace VentasExpress
 {
-    partial class Ventas
+    partial class ChangePassword
     {
         /// <summary>
         /// Required designer variable.
@@ -29,26 +29,21 @@ namespace VentasExpress
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvDatos = new System.Windows.Forms.DataGridView();
+            this.lblWelcome = new System.Windows.Forms.Label();
             this.btnSell = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblWelcome = new System.Windows.Forms.Label();
-            this.lblError = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvDatos
+            // lblWelcome
             // 
-            this.dgvDatos.AllowUserToAddRows = false;
-            this.dgvDatos.AllowUserToDeleteRows = false;
-            this.dgvDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDatos.Location = new System.Drawing.Point(175, 197);
-            this.dgvDatos.Name = "dgvDatos";
-            this.dgvDatos.ReadOnly = true;
-            this.dgvDatos.Size = new System.Drawing.Size(484, 219);
-            this.dgvDatos.TabIndex = 1;
+            this.lblWelcome.AutoSize = true;
+            this.lblWelcome.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcome.Location = new System.Drawing.Point(252, 44);
+            this.lblWelcome.Name = "lblWelcome";
+            this.lblWelcome.Size = new System.Drawing.Size(172, 20);
+            this.lblWelcome.TabIndex = 40;
+            this.lblWelcome.Text = "Cambio de contraseña";
             // 
             // btnSell
             // 
@@ -56,70 +51,44 @@ namespace VentasExpress
             this.btnSell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSell.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSell.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnSell.Location = new System.Drawing.Point(442, 76);
+            this.btnSell.Location = new System.Drawing.Point(420, 91);
             this.btnSell.Name = "btnSell";
             this.btnSell.Size = new System.Drawing.Size(333, 44);
-            this.btnSell.TabIndex = 34;
-            this.btnSell.Text = "Realizar venta";
+            this.btnSell.TabIndex = 39;
+            this.btnSell.Text = "Cambiar contraseña";
             this.btnSell.UseVisualStyleBackColor = false;
             this.btnSell.Click += new System.EventHandler(this.btnSell_Click);
             // 
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F);
-            this.txtSearch.Location = new System.Drawing.Point(187, 86);
+            this.txtSearch.Location = new System.Drawing.Point(192, 99);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(211, 36);
-            this.txtSearch.TabIndex = 33;
+            this.txtSearch.TabIndex = 38;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(57, 87);
+            this.label1.Location = new System.Drawing.Point(35, 102);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 20);
-            this.label1.TabIndex = 32;
-            this.label1.Text = "Venta:";
+            this.label1.Size = new System.Drawing.Size(139, 20);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "Nueva contraseña";
             // 
-            // lblWelcome
-            // 
-            this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcome.Location = new System.Drawing.Point(274, 29);
-            this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(162, 20);
-            this.lblWelcome.TabIndex = 36;
-            this.lblWelcome.Text = "Formulario de ventas";
-            // 
-            // lblError
-            // 
-            this.lblError.AutoSize = true;
-            this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(187, 142);
-            this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(10, 13);
-            this.lblError.TabIndex = 37;
-            this.lblError.Text = ".";
-            // 
-            // Ventas
+            // ChangePassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblError);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.btnSell);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dgvDatos);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Ventas";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ventas";
-            this.Load += new System.EventHandler(this.Ventas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
+            this.Name = "ChangePassword";
+            this.Text = "ChangePassword";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -127,11 +96,9 @@ namespace VentasExpress
 
         #endregion
 
-        protected System.Windows.Forms.DataGridView dgvDatos;
+        private System.Windows.Forms.Label lblWelcome;
         public System.Windows.Forms.Button btnSell;
         public System.Windows.Forms.TextBox txtSearch;
         public System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblWelcome;
-        private System.Windows.Forms.Label lblError;
     }
 }

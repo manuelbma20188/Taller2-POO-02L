@@ -91,7 +91,6 @@ namespace VentasExpress
             this.txtPass.Location = new System.Drawing.Point(146, 137);
             this.txtPass.Multiline = true;
             this.txtPass.Name = "txtPass";
-            this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(211, 36);
             this.txtPass.TabIndex = 3;
             // 
