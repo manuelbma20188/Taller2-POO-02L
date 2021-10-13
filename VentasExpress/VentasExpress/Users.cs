@@ -34,21 +34,26 @@ namespace VentasExpress
             }
             return hash;
         }
+
+        public void FillUsers()
+        {            
+            if (listUsers.Count == 0)
+            {
+                listUsers.Add(new Users { Code = 1, Username = "admin", Password = hashPass("admin123") }); //CAMBIAR CREDENCIALES
+                listUsers.Add(new Users { Code = 2, Username = "vendedor", Password = hashPass("Vendedor123") });
+                listUsers.Add(new Users { Code = 3, Username = "Invitado", Password = hashPass("invitadoinvitado123") });
+            }
+        }
         public bool setList(string uname, string pass)
         {
             string aux = hashPass(pass);
-            bool ok = false; //we use this var to validate the credentials
-            listUsers.Add(new Users { Code = 1, Username = "1", Password = hashPass("1") }); //CAMBIAR CREDENCIALES
-            listUsers.Add(new Users { Code = 2, Username = "vendedor", Password = hashPass("vendedor123") });
-            listUsers.Add(new Users { Code = 3, Username = "invitado", Password = hashPass("invitadoinvitado123") });
-
+            bool ok = false; //we use this var to validate the credentials           
+            
             for (var i = 0; i < listUsers.Count; i++) //accessing to the list
             {
-
                 if (uname == listUsers[i].Username && (listUsers[i].Password) == aux)
                 {
                     ok = true;     //if the users exist, return true               
-
                 }
             }
             return ok;

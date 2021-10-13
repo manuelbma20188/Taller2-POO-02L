@@ -35,6 +35,9 @@ namespace VentasExpress
             this.label1 = new System.Windows.Forms.Label();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.lblError = new System.Windows.Forms.Label();
+            this.listBoxFactura = new System.Windows.Forms.ListBox();
+            this.txtFactura = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,10 +47,12 @@ namespace VentasExpress
             this.dgvDatos.AllowUserToDeleteRows = false;
             this.dgvDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDatos.Location = new System.Drawing.Point(175, 197);
+            this.dgvDatos.Location = new System.Drawing.Point(13, 283);
+            this.dgvDatos.Margin = new System.Windows.Forms.Padding(4);
             this.dgvDatos.Name = "dgvDatos";
             this.dgvDatos.ReadOnly = true;
-            this.dgvDatos.Size = new System.Drawing.Size(484, 219);
+            this.dgvDatos.RowHeadersWidth = 51;
+            this.dgvDatos.Size = new System.Drawing.Size(645, 300);
             this.dgvDatos.TabIndex = 1;
             // 
             // btnSell
@@ -56,9 +61,10 @@ namespace VentasExpress
             this.btnSell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSell.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSell.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnSell.Location = new System.Drawing.Point(442, 76);
+            this.btnSell.Location = new System.Drawing.Point(94, 203);
+            this.btnSell.Margin = new System.Windows.Forms.Padding(4);
             this.btnSell.Name = "btnSell";
-            this.btnSell.Size = new System.Drawing.Size(333, 44);
+            this.btnSell.Size = new System.Drawing.Size(444, 54);
             this.btnSell.TabIndex = 34;
             this.btnSell.Text = "Realizar venta";
             this.btnSell.UseVisualStyleBackColor = false;
@@ -67,19 +73,21 @@ namespace VentasExpress
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F);
-            this.txtSearch.Location = new System.Drawing.Point(187, 86);
+            this.txtSearch.Location = new System.Drawing.Point(193, 97);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(211, 36);
+            this.txtSearch.Size = new System.Drawing.Size(280, 43);
             this.txtSearch.TabIndex = 33;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(57, 87);
+            this.label1.Location = new System.Drawing.Point(114, 100);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 20);
+            this.label1.Size = new System.Drawing.Size(71, 25);
             this.label1.TabIndex = 32;
             this.label1.Text = "Venta:";
             // 
@@ -87,9 +95,10 @@ namespace VentasExpress
             // 
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcome.Location = new System.Drawing.Point(274, 29);
+            this.lblWelcome.Location = new System.Drawing.Point(203, 34);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(162, 20);
+            this.lblWelcome.Size = new System.Drawing.Size(206, 25);
             this.lblWelcome.TabIndex = 36;
             this.lblWelcome.Text = "Formulario de ventas";
             // 
@@ -97,24 +106,63 @@ namespace VentasExpress
             // 
             this.lblError.AutoSize = true;
             this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(187, 142);
+            this.lblError.Location = new System.Drawing.Point(190, 164);
+            this.lblError.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(10, 13);
+            this.lblError.Size = new System.Drawing.Size(12, 17);
             this.lblError.TabIndex = 37;
             this.lblError.Text = ".";
             // 
+            // listBoxFactura
+            // 
+            this.listBoxFactura.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBoxFactura.FormattingEnabled = true;
+            this.listBoxFactura.HorizontalScrollbar = true;
+            this.listBoxFactura.ItemHeight = 16;
+            this.listBoxFactura.Location = new System.Drawing.Point(751, 262);
+            this.listBoxFactura.Name = "listBoxFactura";
+            this.listBoxFactura.Size = new System.Drawing.Size(319, 320);
+            this.listBoxFactura.TabIndex = 45;
+            // 
+            // txtFactura
+            // 
+            this.txtFactura.BackColor = System.Drawing.Color.White;
+            this.txtFactura.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFactura.Location = new System.Drawing.Point(751, 93);
+            this.txtFactura.Multiline = true;
+            this.txtFactura.Name = "txtFactura";
+            this.txtFactura.ReadOnly = true;
+            this.txtFactura.Size = new System.Drawing.Size(319, 174);
+            this.txtFactura.TabIndex = 44;
+            this.txtFactura.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(859, 39);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(94, 20);
+            this.label2.TabIndex = 43;
+            this.label2.Text = "FACTURA";
+            // 
             // Ventas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1089, 596);
+            this.Controls.Add(this.listBoxFactura);
+            this.Controls.Add(this.txtFactura);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.btnSell);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvDatos);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Ventas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ventas";
@@ -133,5 +181,8 @@ namespace VentasExpress
         public System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.ListBox listBoxFactura;
+        private System.Windows.Forms.TextBox txtFactura;
+        private System.Windows.Forms.Label label2;
     }
 }

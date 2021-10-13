@@ -13,15 +13,45 @@ namespace VentasExpress
 {
     public partial class WelcomeView : Form
     {
+        Users users = new Users(); 
+        Session session = new Session();
         public WelcomeView()
-        {
-            InitializeComponent();
+        {            
+            InitializeComponent();            
         }
         Products products = new Products();
-        Users users = new Users();
+        
+        private bool verifySession()
+        {
+            if(session.Uname != null)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        private void log()
+        {
+            Inicio form1 = new Inicio(users);
+            this.Hide();
+            if (form1.ShowDialog() == DialogResult.OK)
+            {                
+                session = form1.session;
+            }
+            lblWelcome.Text = "Bienvenido " + session.Uname;
+            this.Show();
+        }
+
         private void WelcomeView_Load(object sender, EventArgs e)
         {
-            lblWelcome.Text = "Bienvenido " + Form1.name;                
+            users.FillUsers();
+            if (!verifySession())
+            {
+                this.Hide();
+
+                log();
+                this.Show();
+            }            
         }        
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -42,20 +72,16 @@ namespace VentasExpress
 
         private void button3_Click(object sender, EventArgs e)
         {
-            ChangePassword changePassword = new ChangePassword(users);
-            changePassword.Show();
-            users = changePassword.users;
-
-
-            //string newPass = Interaction.InputBox("Ingrese la nueva contraseña: ");
-            //foreach (var npass in Form1.listUsers.Where(w => w.Username == Form1.name))
-            //{
-            //    npass.Password = newPass;
-            //}
-            //MessageBox.Show("Contraseña actualizada correctamente");
-            ////this.WindowState = FormWindowState.Minimized;
-            //this.Hide();
-            //form.Show();
+            ChangePassword changePassword = new ChangePassword(users, session);                        
+            if(changePassword.ShowDialog() == DialogResult.OK)
+            {
+                users = changePassword.users;
+                session = changePassword.sessions;
+                if (!verifySession())
+                {
+                    log();
+                }
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)

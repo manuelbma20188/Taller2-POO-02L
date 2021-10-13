@@ -24,3 +24,17 @@ C:\Users\manu2\Desktop\Taller2-POO-02L\VentasExpress\VentasExpress\obj\Debug\Ven
 C:\Users\manu2\Desktop\Taller2-POO-02L\VentasExpress\VentasExpress\obj\Debug\VentasExpress.pdb
 C:\Users\manu2\Desktop\Taller2-POO-02L\VentasExpress\VentasExpress\obj\Debug\VentasExpress.Ventas.resources
 C:\Users\manu2\Desktop\Taller2-POO-02L\VentasExpress\VentasExpress\obj\Debug\VentasExpress.ChangePassword.resources
+C:\Users\ronal\Downloads\Taller2-POO-02L (1)\Taller2-POO-02L\VentasExpress\VentasExpress\bin\Debug\VentasExpress.exe.config
+C:\Users\ronal\Downloads\Taller2-POO-02L (1)\Taller2-POO-02L\VentasExpress\VentasExpress\bin\Debug\VentasExpress.exe
+C:\Users\ronal\Downloads\Taller2-POO-02L (1)\Taller2-POO-02L\VentasExpress\VentasExpress\bin\Debug\VentasExpress.pdb
+C:\Users\ronal\Downloads\Taller2-POO-02L (1)\Taller2-POO-02L\VentasExpress\VentasExpress\obj\Debug\VentasExpress.csproj.AssemblyReference.cache
+C:\Users\ronal\Downloads\Taller2-POO-02L (1)\Taller2-POO-02L\VentasExpress\VentasExpress\obj\Debug\VentasExpress.ChangePassword.resources
+C:\Users\ronal\Downloads\Taller2-POO-02L (1)\Taller2-POO-02L\VentasExpress\VentasExpress\obj\Debug\VentasExpress.Properties.Resources.resources
+C:\Users\ronal\Downloads\Taller2-POO-02L (1)\Taller2-POO-02L\VentasExpress\VentasExpress\obj\Debug\VentasExpress.Ventas.resources
+C:\Users\ronal\Downloads\Taller2-POO-02L (1)\Taller2-POO-02L\VentasExpress\VentasExpress\obj\Debug\VentasExpress.ViewInventory.resources
+C:\Users\ronal\Downloads\Taller2-POO-02L (1)\Taller2-POO-02L\VentasExpress\VentasExpress\obj\Debug\VentasExpress.WelcomeView.resources
+C:\Users\ronal\Downloads\Taller2-POO-02L (1)\Taller2-POO-02L\VentasExpress\VentasExpress\obj\Debug\VentasExpress.csproj.GenerateResource.cache
+C:\Users\ronal\Downloads\Taller2-POO-02L (1)\Taller2-POO-02L\VentasExpress\VentasExpress\obj\Debug\VentasExpress.csproj.CoreCompileInputs.cache
+C:\Users\ronal\Downloads\Taller2-POO-02L (1)\Taller2-POO-02L\VentasExpress\VentasExpress\obj\Debug\VentasExpress.exe
+C:\Users\ronal\Downloads\Taller2-POO-02L (1)\Taller2-POO-02L\VentasExpress\VentasExpress\obj\Debug\VentasExpress.pdb
+C:\Users\ronal\Downloads\Taller2-POO-02L (1)\Taller2-POO-02L\VentasExpress\VentasExpress\obj\Debug\VentasExpress.Inicio.resources

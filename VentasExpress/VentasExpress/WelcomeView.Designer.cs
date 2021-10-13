@@ -31,18 +31,19 @@ namespace VentasExpress
         {
             this.lblWelcome = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnConsultaInventario = new System.Windows.Forms.Button();
+            this.btnCambiarContra = new System.Windows.Forms.Button();
+            this.btnVentaNueva = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcome.Location = new System.Drawing.Point(368, 21);
+            this.lblWelcome.Location = new System.Drawing.Point(343, 56);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(90, 20);
+            this.lblWelcome.Size = new System.Drawing.Size(114, 25);
             this.lblWelcome.TabIndex = 1;
             this.lblWelcome.Text = "Bienvenido";
             // 
@@ -52,67 +53,72 @@ namespace VentasExpress
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnSalir.Location = new System.Drawing.Point(573, -2);
+            this.btnSalir.Location = new System.Drawing.Point(743, -2);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(37, 64);
+            this.btnSalir.Size = new System.Drawing.Size(70, 53);
             this.btnSalir.TabIndex = 23;
             this.btnSalir.Text = "X";
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // button2
+            // btnConsultaInventario
             // 
-            this.button2.BackColor = System.Drawing.Color.Teal;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(209, 144);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(182, 49);
-            this.button2.TabIndex = 26;
-            this.button2.Text = "Consultar inventario";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnConsultaInventario.BackColor = System.Drawing.Color.Teal;
+            this.btnConsultaInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConsultaInventario.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultaInventario.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnConsultaInventario.Location = new System.Drawing.Point(287, 109);
+            this.btnConsultaInventario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnConsultaInventario.Name = "btnConsultaInventario";
+            this.btnConsultaInventario.Size = new System.Drawing.Size(243, 60);
+            this.btnConsultaInventario.TabIndex = 26;
+            this.btnConsultaInventario.Text = "Consultar inventario";
+            this.btnConsultaInventario.UseVisualStyleBackColor = false;
+            this.btnConsultaInventario.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btnCambiarContra
             // 
-            this.button3.BackColor = System.Drawing.Color.Crimson;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Location = new System.Drawing.Point(397, 144);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(182, 49);
-            this.button3.TabIndex = 27;
-            this.button3.Text = "Cambiar contraseña";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnCambiarContra.BackColor = System.Drawing.Color.Crimson;
+            this.btnCambiarContra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCambiarContra.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCambiarContra.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnCambiarContra.Location = new System.Drawing.Point(549, 109);
+            this.btnCambiarContra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCambiarContra.Name = "btnCambiarContra";
+            this.btnCambiarContra.Size = new System.Drawing.Size(243, 60);
+            this.btnCambiarContra.TabIndex = 27;
+            this.btnCambiarContra.Text = "Cambiar contraseña";
+            this.btnCambiarContra.UseVisualStyleBackColor = false;
+            this.btnCambiarContra.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // btnVentaNueva
             // 
-            this.button4.BackColor = System.Drawing.Color.Green;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button4.Location = new System.Drawing.Point(21, 144);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(182, 49);
-            this.button4.TabIndex = 28;
-            this.button4.Text = "Venta nueva";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnVentaNueva.BackColor = System.Drawing.Color.Green;
+            this.btnVentaNueva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVentaNueva.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVentaNueva.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnVentaNueva.Location = new System.Drawing.Point(24, 109);
+            this.btnVentaNueva.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVentaNueva.Name = "btnVentaNueva";
+            this.btnVentaNueva.Size = new System.Drawing.Size(243, 60);
+            this.btnVentaNueva.TabIndex = 28;
+            this.btnVentaNueva.Text = "Venta nueva";
+            this.btnVentaNueva.UseVisualStyleBackColor = false;
+            this.btnVentaNueva.Click += new System.EventHandler(this.button4_Click);
             // 
             // WelcomeView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(604, 344);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.ClientSize = new System.Drawing.Size(805, 245);
+            this.Controls.Add(this.btnVentaNueva);
+            this.Controls.Add(this.btnCambiarContra);
+            this.Controls.Add(this.btnConsultaInventario);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.lblWelcome);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "WelcomeView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WelcomeView";
@@ -126,8 +132,8 @@ namespace VentasExpress
 
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnConsultaInventario;
+        private System.Windows.Forms.Button btnCambiarContra;
+        private System.Windows.Forms.Button btnVentaNueva;
     }
 }

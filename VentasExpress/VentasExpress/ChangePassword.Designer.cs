@@ -39,9 +39,10 @@ namespace VentasExpress
             // 
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcome.Location = new System.Drawing.Point(252, 44);
+            this.lblWelcome.Location = new System.Drawing.Point(177, 50);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(172, 20);
+            this.lblWelcome.Size = new System.Drawing.Size(220, 25);
             this.lblWelcome.TabIndex = 40;
             this.lblWelcome.Text = "Cambio de contraseña";
             // 
@@ -51,9 +52,10 @@ namespace VentasExpress
             this.btnSell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSell.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSell.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnSell.Location = new System.Drawing.Point(420, 91);
+            this.btnSell.Location = new System.Drawing.Point(64, 214);
+            this.btnSell.Margin = new System.Windows.Forms.Padding(4);
             this.btnSell.Name = "btnSell";
-            this.btnSell.Size = new System.Drawing.Size(333, 44);
+            this.btnSell.Size = new System.Drawing.Size(444, 54);
             this.btnSell.TabIndex = 39;
             this.btnSell.Text = "Cambiar contraseña";
             this.btnSell.UseVisualStyleBackColor = false;
@@ -62,31 +64,36 @@ namespace VentasExpress
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F);
-            this.txtSearch.Location = new System.Drawing.Point(192, 99);
+            this.txtSearch.Location = new System.Drawing.Point(239, 123);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(211, 36);
+            this.txtSearch.PasswordChar = '*';
+            this.txtSearch.Size = new System.Drawing.Size(280, 43);
             this.txtSearch.TabIndex = 38;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(35, 102);
+            this.label1.Location = new System.Drawing.Point(47, 126);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 20);
+            this.label1.Size = new System.Drawing.Size(184, 25);
             this.label1.TabIndex = 37;
-            this.label1.Text = "Nueva contraseña";
+            this.label1.Text = "Nueva contraseña:";
             // 
             // ChangePassword
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(594, 309);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.btnSell);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ChangePassword";
             this.Text = "ChangePassword";
             this.ResumeLayout(false);
